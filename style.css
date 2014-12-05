@@ -36,6 +36,13 @@ a:hover{text-decoration: none;}
 }
 
 
+/* Bloc sizes */
+
+.bloc-sm{
+	padding:20px 0;
+}
+
+
 /* Bloc - Light theme */
 
 .l-bloc{
