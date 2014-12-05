@@ -13,8 +13,7 @@ a:hover{text-decoration: none;}
 
 
 /* Globals type styling */
-   
- h1, h2, h3, h4, h5, h6, p, label, .btn, a{
+    h1, h2, h3, h4, h5, h6, p, label, .btn, a{
 	font-family:"Helvetica";
 }
 
@@ -34,13 +33,6 @@ a:hover{text-decoration: none;}
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-}
-
-
-/* Bloc sizes */
-
-.bloc-lg{
-	padding:100px 0;
 }
 
 
@@ -85,7 +77,7 @@ a:hover{text-decoration: none;}
 /* Bloc image backgrounds */
 
 .bg-OT-Web-Placeholder{
-	background-image:url('img/OT%20Web%20Placeholder.png');
+	background-image:url("img/OT%20Web%20Placeholder.png");
 }
 
 /* NavBar */
