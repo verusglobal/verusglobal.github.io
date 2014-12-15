@@ -205,3 +205,6 @@ div.modal-bg {
 #colorbox {
     z-index: 11;
 }
+div#colorbox{
+-moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+}
