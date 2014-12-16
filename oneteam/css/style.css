@@ -203,6 +203,7 @@ div.modal-bg {
   display:none;
 }
 #colorbox {
+    top:"20%";
     z-index: 11;
 }
 div#colorbox{
