@@ -1,3 +1,6 @@
+@-ms-viewport {
+  width: auto !important;
+}
 body {
   font-family: Helvetica, Arial, sans-serif;
 }
@@ -9,6 +12,7 @@ h3 {
 }
 .more {
   font-size: 12px;
+  white-space: nowrap;
 }
 .side-button {
   position: fixed;
@@ -95,12 +99,23 @@ h3 {
   padding: 0;
   margin-top: -2px;
 }
+@media (max-width:767px){
+  .clients-heading {
+    text-align: center;
+  }
+}
 .client {
   height: 37px;
   margin: 10px 0;
 }
 .client:not(:last-child) {
   border-right: 1px solid #c6c6c6;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .clients, .clients .client {
+    border-bottom: 0;
+    border-top: 0;
+  }
 }
 @media (max-width: 767px) {
   .clients, .clients .client {
@@ -119,7 +134,17 @@ h3 {
 }
 .video, .my-team, .endorsements {
   border: 1px solid #c6c6c6;
-  height: 310px;
+  padding-bottom: 20px;
+}
+@media (min-width: 1200px) {
+  .video, .my-team, .endorsements {
+    height: 310px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .video, .my-team, .endorsements {
+    height: 350px;
+  }
 }
 @media (max-width: 410px) {
   .endorsements{
@@ -141,15 +166,15 @@ h3 {
 }
 .news, .materials {
   border: 1px solid #c6c6c6;
-  height: 205px;
 }
-@media (max-width: 531px)  {
-  .materials{
-    height: 230px;
+@media (min-width: 992px)  {
+  .news, .materials{
+    height: 200px;
   }
 }
 .news-item, .material {
   font-size: 12px;
+  padding-bottom: 20px;
 }
 .news-item img {
   margin: 10px;
