@@ -21,15 +21,11 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie() {
-    var user = getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
-    } else {
-        user = prompt("Please enter your username:", "");
-        if (user != "" && user != null) {
-            setCookie("username", user, 365);
-        }
-    }
+function enableResourcesAccess() {
+    setCookie("resources", "1", 1000);
 }
 
+function checkResourcesAccess() {
+    var hasResourceAccess = getCookie("resources");
+    return (hasResourceAccess != "");
+}

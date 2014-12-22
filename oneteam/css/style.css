@@ -10,6 +10,13 @@ a {
 h3 {
   font-weight: Bold;
 }
+.btn-default {
+  background-color: #00477F;
+  color: white;
+}
+.error-message {
+  color: red;
+}
 .more {
   font-size: 12px;
   white-space: nowrap;
