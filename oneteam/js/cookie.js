@@ -29,3 +29,11 @@ function checkResourcesAccess() {
     var hasResourceAccess = getCookie("resources");
     return (hasResourceAccess != "");
 }
+
+function setHash(hash) {
+    setCookie("hash", "1", 1);
+}
+
+function getHash() {
+    return getCookie("hash");
+}
