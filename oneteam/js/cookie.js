@@ -31,7 +31,7 @@ function checkResourcesAccess() {
 }
 
 function setHash(hash) {
-    setCookie("hash", "1", 1);
+    setCookie("hash", hash, 1);
 }
 
 function getHash() {
