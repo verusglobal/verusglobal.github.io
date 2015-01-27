@@ -21,6 +21,10 @@ function getCookie(cname) {
     return "";
 }
 
+function deleteCookie(name) {
+  document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+}
+
 function enableResourcesAccess() {
     setCookie("resources", "1", 1000);
 }
@@ -36,4 +40,8 @@ function setHash(hash) {
 
 function getHash() {
     return getCookie("hash");
+}
+
+function removeHash() {
+    return deleteCookie("hash");
 }
