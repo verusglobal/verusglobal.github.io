@@ -98,7 +98,8 @@
 <script type="text/javascript" src="js/cookie.js"></script>
 
 <script type="text/javascript">
-    var hash = unescape(self.document.location.hash.substring(1)) ;
+    //var hash = unescape(self.document.location.hash.substring(1)) ;
+    var hash = document.location.pathname.substr(1);
     if (hash) {
         var redirectUrl = $("#ignore_redirecturl").val();
         $("#ignore_redirecturl").val(redirectUrl + "#" + hash);
@@ -112,7 +113,8 @@
     }
 
     function scrollToHash() {
-        var hash = location.hash;
+        //var hash = location.hash;
+        var hash = document.location.pathname.substr(1);
         if (hash) {
             $(document).scrollTop( $(hash).offset().top );
         }
