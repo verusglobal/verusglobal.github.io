@@ -52,6 +52,17 @@
 
       <p class="blurb-small">Verus Global does not share, sell, rent, or trade personally identifiable information with third parties for promotional purposes.</p>
 
+      <div id="section-links">
+        <p class="blurb-divider"></p>
+        <a href="#180-shift">180 Shift</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#engagement">Engagement</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#family">Family</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#long-lever-questions">Long Lever Questions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#loyalty">Loyalty</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#meetings">Meetings</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#pdfs">PDFs</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#team">Team</a>
+      </div>
       <div id="resource-login">
         <p class="blurb-divider"></p>
         <p class="blurb-heading">Sign up and access free videos and resources.</p>
@@ -108,8 +119,10 @@
 
     if (checkResourcesAccess()) {
         $("#resource-login").hide();
+        $("#section-links").show();
         $("#resource-content").load("./resource_content.html");
     } else {
+        $("#section-links").hide();
         $("#resource-login").show();
     }
 
