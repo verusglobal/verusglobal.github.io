@@ -127,8 +127,8 @@
     }
 
     function scrollToHash() {
-        var hash = getHash();
-        //var hash = location.hash;
+        //var hash = getHash();
+        var hash = location.hash;
         //var hash = document.location.pathname.substr(1);
         if (hash) {
             $(document).scrollTop( $("#" + hash).offset().top );
