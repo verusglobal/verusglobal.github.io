@@ -33,15 +33,3 @@ function checkResourcesAccess() {
     var hasResourceAccess = getCookie("resources");
     return (hasResourceAccess != "");
 }
-
-function setHash(hash) {
-    setCookie("hash", hash, 1);
-}
-
-function getHash() {
-    return getCookie("hash");
-}
-
-function removeHash() {
-    return deleteCookie("hash");
-}
