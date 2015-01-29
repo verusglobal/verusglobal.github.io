@@ -111,10 +111,11 @@
 <script type="text/javascript">
     //var hash = unescape(self.document.location.hash.substring(1)) ;
     //var hash = document.location.pathname.substr(1);
-    var hash = getHash();
+    //var hash = getHash();
+    var hash = location.hash;
     if (hash) {
         var redirectUrl = $("#ignore_redirecturl").val();
-        $("#ignore_redirecturl").val(redirectUrl + "#" + hash);
+        $("#ignore_redirecturl").val(redirectUrl + hash);
     }
 
     if (checkResourcesAccess()) {
