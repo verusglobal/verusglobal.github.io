@@ -93,6 +93,7 @@ h3 {
   width: 96px;
   height: 32px;
   background-repeat: no-repeat;
+  margin-bottom: 10px;
 }
 .pill.amazon {
   background-image: url(../img/icon_amazon.png);
