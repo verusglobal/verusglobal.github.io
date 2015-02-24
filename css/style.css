@@ -55,6 +55,27 @@ h3 {
   height: 25px;
   margin-top: 10px;
 }
+.pill {
+  display: inline-block;
+  width: 96px;
+  height: 32px;
+  background-repeat: no-repeat;
+}
+.pill.amazon {
+  background-image: url(../img/icon_amazon.png);
+}
+.pill.barnes {
+  background-image: url(../img/icon_bn.png);
+}
+.pill.ceo {
+  background-image: url(../img/icon_ceo.png);
+}
+.pill.tattered {
+  background: url(../img/icon_tc.png);
+}
+.pill:hover {
+  background-position:0 -32px;
+}
 .blurb {
   font-size: 12px;
 }
