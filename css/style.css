@@ -2,7 +2,10 @@
   width: auto !important;
 }
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "LatoLight", Georgia;
+}
+b {
+  font-family: "Lato", Georgia;
 }
 a {
   color: #00477F;
